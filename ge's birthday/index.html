@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oregano&family=Satisfy&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="card">
+      <h1 class="title">What day is it?</h1>
+      <div class="input-box">
+        <input type="date" id="dateInput">
+      </div>
+      <button onclick="checkDate()">Confirm</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <div class="page2-wrapper">
+        <h1 class="birthday-left">It's your Birthday!</h1>
+        <div class="scene">
+            <img src="images/character.png" class="character" alt="character">
+            <img src="images/polaroid.png" class="polaroid" alt="polaroid">
+            <img src="images/stars.png" class="stars" alt="stars">
+            
+            <div class="name">
+              <img src="images/g.png" class="letter g">
+              <img src="images/h.png" class="letter h">
+              <img src="images/e.png" class="letter e">
+              <img src="images/a.png" class="letter a">
+            </div>
+        </div>
+    </div>
+    <div class="confetti">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div id="next-arrow">➜</div>
+  </section>
+
+  <section class="page" id="page3">
+    <h2 class ="pick-a-song">Pick a song to celebrate your birthday with!</h2>
+
+    <div class="song-list">
+      <div class="song" data-src="songs/song_1.mp3">
+        <img src="images/thumbnail_1.png" alt="DJ Style Hantakan V2">
+        <div class="song-info">
+          <div class="title">DJ Style Hantakan V2</div>
+          <div class="artist">Kiki RMX</div>
+        </div>
+      </div>
+      <div class="song" data-src="songs/song_2.mp3">
+        <img src="images/thumbnail_2.png" alt="Kutukan Mantan">
+        <div class="song-info">
+          <div class="title">Kutukan Mantan</div>
+          <div class="artist">Angelbert Pop</div>
+        </div>
+      </div>
+      <div class="song" data-src="songs/song_3.mp3">
+        <img src="images/thumbnail_3.png" alt="TABOLA BALE">
+        <div class="song-info">
+          <div class="title">TABOLA BALE</div>
+          <div class="artist">Silet Open Up, Jacson Seran, Juan Reza, Diva Aurel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page4">
+    <h2 class="birthday-gift">Here's a Birthday Gift for you!</h2>
+    <img src="images/giftbox.gif" alt="Gift Box" class="gift">
+    <audio id="audioPlayer"></audio>
+  </section>
+
+  <section class="page" id="page5">
+    <div class="letter-wrapper">
+      <img src="images/letter_bg.png" alt="Letter Background" class="letter-bg">
+      <h2 class="letter-content">A letter for Ghaida</h2>
+      <p class="the-letter">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet quam fringilla libero rutrum lobortis. Nam id vulputate odio. Cras molestie quis ante et vestibulum. Nullam viverra leo quis libero vulputate ultricies sit amet et lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vestibulum ligula ac tortor faucibus, eget viverra elit faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum eu diam interdum, luctus velit in, vehicula erat. Aliquam dapibus mauris eget nulla faucibus, vitae commodo massa placerat. Nam luctus felis nec fermentum lobortis. Aliquam ac odio a neque suscipit mollis. Cras sit amet felis dolor. 
+        Nam consequat, nulla vitae lacinia malesuada, ipsum nibh pulvinar mi, sit amet eleifend elit velit id nulla. Cras pretium elit luctus, laoreet turpis sed, scelerisque tellus. Fusce venenatis feugiat diam, id tristique ligula pellentesque vitae.
+      </p>
+    </div>
+    <audio id="audioPlayer"></audio>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
